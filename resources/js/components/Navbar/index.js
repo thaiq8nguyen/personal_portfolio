@@ -19,9 +19,11 @@ const NavBar = () => {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
+                
                     <Typography variant="h6" className={classes.title}>Thai Nguyen</Typography>
-                    <Button>Projects</Button>
                     <Button>About</Button>
+                    <Button>Projects</Button>
+                    
                     <Button>Contact</Button>
                 </Toolbar>
                 

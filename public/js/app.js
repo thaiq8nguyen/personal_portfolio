@@ -98928,6 +98928,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/images/profile.png":
+/*!**************************************!*\
+  !*** ./resources/images/profile.png ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/profile.png?824d6150c3c18155191a8bf441086d42";
+
+/***/ }),
+
 /***/ "./resources/js/AppRouter.js":
 /*!***********************************!*\
   !*** ./resources/js/AppRouter.js ***!
@@ -99060,10 +99071,45 @@ var NavBar = function NavBar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Toolbar"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     variant: "h6",
     className: classes.title
-  }, "Thai Nguyen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Contact"))));
+  }, "Thai Nguyen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Contact"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
+
+/***/ }),
+
+/***/ "./resources/js/components/RecentProjects/index.js":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/RecentProjects/index.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+
+
+
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
+  return {
+    root: {}
+  };
+});
+
+var RecentProjects = function RecentProjects() {
+  var classes = useStyles();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Recent Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], null))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RecentProjects);
 
 /***/ }),
 
@@ -99081,17 +99127,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/components/Navbar/index.js");
+/* harmony import */ var _components_RecentProjects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/RecentProjects */ "./resources/js/components/RecentProjects/index.js");
+/* harmony import */ var _images_profile_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/profile.png */ "./resources/images/profile.png");
+/* harmony import */ var _images_profile_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_profile_png__WEBPACK_IMPORTED_MODULE_5__);
+
+
 
 
 
 
 var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
-  return {};
+  return {
+    root: {
+      flexGrow: 1
+    },
+    introContainer: {
+      marginTop: theme.spacing(6)
+    },
+    profile: {
+      display: "flex",
+      justifyContent: "center"
+    },
+    profileIntro: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%"
+    },
+    recentProjectContainer: {
+      marginTop: theme.spacing(4)
+    }
+  };
 });
 
 var Home = function Home() {
   var classes = useStyles();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    className: classes.introContainer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    justify: "center",
+    className: classes.root
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 6
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    className: classes.profile
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_profile_png__WEBPACK_IMPORTED_MODULE_5___default.a
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 6
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    className: classes.profileIntro
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h3"
+  }, "Hello, my name is Thai Nguyen"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    className: classes.recentProjectContainer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_RecentProjects__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
