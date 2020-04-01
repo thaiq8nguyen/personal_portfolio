@@ -602,6 +602,35 @@ function _typeof(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
@@ -616,6 +645,23 @@ function _inheritsLoose(subClass, superClass) {
 }
 
 module.exports = _inheritsLoose;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
 
 /***/ }),
 
@@ -35586,6 +35632,75 @@ var withWidth = function withWidth() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (withWidth);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Menu.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Menu.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+}), 'Menu');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSvgIcon;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/esm/SvgIcon/index.js"));
+
+function createSvgIcon(path, displayName) {
+  var Component = _react.default.memo(_react.default.forwardRef(function (props, ref) {
+    return _react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
+      ref: ref
+    }, props), path);
+  }));
+
+  if (true) {
+    Component.displayName = "".concat(displayName, "Icon");
+  }
+
+  Component.muiName = _SvgIcon.default.muiName;
+  return Component;
+}
 
 /***/ }),
 
@@ -98928,6 +99043,50 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/images/github_logo.png":
+/*!******************************************!*\
+  !*** ./resources/images/github_logo.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/github_logo.png?f2099b8ad2426edeef6e5ca7a950c0a5";
+
+/***/ }),
+
+/***/ "./resources/images/laravel_logo.png":
+/*!*******************************************!*\
+  !*** ./resources/images/laravel_logo.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/laravel_logo.png?932d2953c26e9a3cb0c2ec659abd7f57";
+
+/***/ }),
+
+/***/ "./resources/images/mataka_logo.png":
+/*!******************************************!*\
+  !*** ./resources/images/mataka_logo.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/mataka_logo.png?f092afc2745e703ca57ea7d9aec76f93";
+
+/***/ }),
+
+/***/ "./resources/images/nodejs_logo.png":
+/*!******************************************!*\
+  !*** ./resources/images/nodejs_logo.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/nodejs_logo.png?268dd39c5ecceba6d7f55e6ee841793b";
+
+/***/ }),
+
 /***/ "./resources/images/profile.png":
 /*!**************************************!*\
   !*** ./resources/images/profile.png ***!
@@ -98936,6 +99095,50 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 module.exports = "/images/profile.png?824d6150c3c18155191a8bf441086d42";
+
+/***/ }),
+
+/***/ "./resources/images/react_logo.png":
+/*!*****************************************!*\
+  !*** ./resources/images/react_logo.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/react_logo.png?a2971d52caa4f1e8411c40bdfeb579a1";
+
+/***/ }),
+
+/***/ "./resources/images/receiptor_logo.png":
+/*!*********************************************!*\
+  !*** ./resources/images/receiptor_logo.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/receiptor_logo.png?35c3f00b8b51780902125d39fe157742";
+
+/***/ }),
+
+/***/ "./resources/images/salon_register_logo.png":
+/*!**************************************************!*\
+  !*** ./resources/images/salon_register_logo.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/salon_register_logo.png?f334bd02459bb475cc74b91554f23851";
+
+/***/ }),
+
+/***/ "./resources/images/vue_logo.png":
+/*!***************************************!*\
+  !*** ./resources/images/vue_logo.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vue_logo.png?ea6cbdcc483e2980ff74c44bb171cd64";
 
 /***/ }),
 
@@ -99048,6 +99251,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -99068,7 +99274,10 @@ var NavBar = function NavBar() {
     className: classes.root
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["AppBar"], {
     position: "static"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Toolbar"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Toolbar"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
+    edge: "start",
+    "aria-label": "menu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default.a, null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     variant: "h6",
     className: classes.title
   }, "Thai Nguyen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Contact"))));
@@ -99091,22 +99300,237 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _images_mataka_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/mataka_logo.png */ "./resources/images/mataka_logo.png");
+/* harmony import */ var _images_mataka_logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_mataka_logo_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_github_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/github_logo.png */ "./resources/images/github_logo.png");
+/* harmony import */ var _images_github_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_github_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_react_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/react_logo.png */ "./resources/images/react_logo.png");
+/* harmony import */ var _images_react_logo_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_react_logo_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_vue_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/vue_logo.png */ "./resources/images/vue_logo.png");
+/* harmony import */ var _images_vue_logo_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_vue_logo_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_laravel_logo_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/laravel_logo.png */ "./resources/images/laravel_logo.png");
+/* harmony import */ var _images_laravel_logo_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_laravel_logo_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_nodejs_logo_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/nodejs_logo.png */ "./resources/images/nodejs_logo.png");
+/* harmony import */ var _images_nodejs_logo_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_nodejs_logo_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_salon_register_logo_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/salon_register_logo.png */ "./resources/images/salon_register_logo.png");
+/* harmony import */ var _images_salon_register_logo_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_salon_register_logo_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_receiptor_logo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../images/receiptor_logo.png */ "./resources/images/receiptor_logo.png");
+/* harmony import */ var _images_receiptor_logo_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_receiptor_logo_png__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
+
+
+
+
+
 
 
 
 var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(function (theme) {
   return {
-    root: {}
+    root: {
+      flexGrow: 1,
+      flexDirection: "row",
+      marginTop: theme.spacing(1)
+    },
+    projectContainer: {
+      flex: 1
+    },
+    techLogoWithWord: {
+      display: "flex"
+    }
   };
 });
 
 var RecentProjects = function RecentProjects() {
   var classes = useStyles();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Recent Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h4"
+  }, "Recent Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 3,
+    className: classes.root
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    className: classes.projectContainer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6"
+  }, "Mataka")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_mataka_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 9
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "body2"
+  }, "Mataka is a school calendar application. It allows coaches and teachers to post events for their students. Students can subscribe to public calendars to see upcoming events.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     container: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
-    item: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], null))));
+    item: true,
+    xs: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Built using: ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_react_logo_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    width: "32px",
+    height: "32px"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_nodejs_logo_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    width: "32px",
+    height: "32px"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    justify: "center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/thaiq8nguyen/school-calendar-fe"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_github_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    width: "32px",
+    height: "32px"
+  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    className: classes.projectContainer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6"
+  }, "Salon Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_salon_register_logo_png__WEBPACK_IMPORTED_MODULE_9___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 9
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "body2"
+  }, "Salon Register enables salon owners to record their technician's sales. The application removes paper registers with a time-saver flexibile platform.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Built using: ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_vue_logo_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    width: "32px",
+    height: "32px"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2,
+    className: classes.techLogoWithWord
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      marginRight: "3px"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_laravel_logo_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    width: "32px",
+    height: "32px"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Laravel")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    justify: "center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/thaiq8nguyen/salon-management"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_github_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    width: "32px",
+    height: "32px"
+  }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    className: classes.projectContainer
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6"
+  }, "Receiptor")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_receiptor_logo_png__WEBPACK_IMPORTED_MODULE_10___default.a
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 9
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "body2"
+  }, "Receiptor is a versatile receipt tracking app. It allows users to track their spending in a receipt with flexible categories. Users can upload a picture of their receipt to the app for reference.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 4
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], null, "Built using: ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_react_logo_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    width: "32px",
+    height: "32px"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_nodejs_logo_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    width: "32px",
+    height: "32px"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    justify: "center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 3
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/Receipt-Tracking-App"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_github_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    width: "32px",
+    height: "32px"
+  })))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (RecentProjects);
