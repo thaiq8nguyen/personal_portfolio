@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Box, Container, Grid, Paper, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Navbar from "../components/Navbar"
@@ -30,9 +30,10 @@ const useStyles = makeStyles(theme => ({
 }))
 const Home = () => {
     const classes = useStyles()
+    
     return (
         <div>
-            <Navbar/>
+            <Navbar />
             
             <Container className={classes.introContainer}>
                 <Grid container justify="center" className={classes.root} >
