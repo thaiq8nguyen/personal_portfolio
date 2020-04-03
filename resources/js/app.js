@@ -17,6 +17,8 @@ require('./bootstrap');
 import React from 'react'
 import ReactDOM from "react-dom"
 import AppRouter from "./AppRouter"
+import "typeface-raleway"
+import "typeface-titillium-web"
 
 ReactDOM.render(
     <AppRouter/>,

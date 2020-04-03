@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
 import {Container, Link, Typography} from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Navbar from "../components/Navbar"
@@ -14,6 +15,9 @@ const About = () => {
     const classes = useStyles()
     return (
         <div>
+            <Helmet>
+                <title>About >> Thai Nguyen</title>
+            </Helmet>
             <Navbar/>
             <Container maxWidth="md">
                 <Container className={classes.titleContainer}>
@@ -21,7 +25,7 @@ const About = () => {
                 </Container>
                 <Typography variant="body1"><strong>Thai Nguyen</strong> is a web developer, engineer, traveler. Until recently, he used to work for a high volume mobile phone service business where he was responsible for data warehousing management and test engineering. He had developed several pieces of application to handle inventory, product management flow, and merchandise returns.
                 <br/><br/>
-                In the past ten months, Thai has been enrolled in an immersive full-stack web developer program at Lambda School. During the courses, he has learned basic HTML with Javascript front-end developement to back-end development using Node JS. Additionally, he also learns intensive computer science materials such as algorithms, graphs, blockchains and basic CPU computing operations.
+                In the past ten months, Thai has been enrolled in an immersive full-stack web developer program at Lambda School. During the courses, he has learned basic HTML with Javascript front-end developement to back-end development using Node JS. Additionally, he also has learned intensive computer science materials such as algorithms, graphs, blockchains and basic CPU computing operations.
 
                 <br/><br/>
                 In his spare time, Thai enjoys running and exploring various web technologies.
@@ -33,7 +37,9 @@ const About = () => {
                 </Typography>
                 <Link href="https://www.linkedin.com/in/tnguyen-web" color="inherit" variant="body1" underline="always">Linkedin</Link>&nbsp;/&nbsp;
                 <Link href="https://github.com/thaiq8nguyen" color="inherit" variant="body1" underline="always">Github</Link>
-
+                <br/><br/>
+                <Link href="https://www.dropbox.com/s/6najw9x6vvaqyec/Thai_Nguyen_Resume.pdf?dl=0" color="primary" variant="body1" underline="always">Resume</Link>
+                
 
             </Container>
             

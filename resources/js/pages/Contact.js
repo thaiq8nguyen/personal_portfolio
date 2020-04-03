@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 import {
 	Button,
 	Container,
@@ -33,6 +34,9 @@ const Contact = () => {
     })
 	return (
 		<div>
+			<Helmet>
+                <title>Contact >> Thai Nguyen</title>
+            </Helmet>
 			<Navbar />
 			<Container maxWidth="md">
 				<Container className={classes.titleContainer}>

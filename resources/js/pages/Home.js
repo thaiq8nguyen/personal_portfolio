@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { Helmet } from "react-helmet"
 import { Box, Container, Grid, Paper, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Navbar from "../components/Navbar"
@@ -33,6 +34,9 @@ const Home = () => {
     
     return (
         <div>
+            <Helmet>
+                <title>Thai Nguyen</title>
+            </Helmet>
             <Navbar />
             
             <Container className={classes.introContainer}>

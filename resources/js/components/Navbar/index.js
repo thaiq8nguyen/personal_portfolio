@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     title: {
-        flexGrow: 1
+        fontFamily: "Titillium Web"
     },
     toolbar: {
         display: "flex",
@@ -90,7 +90,7 @@ const NavBar = () => {
             <AppBar position="static">
                 <Toolbar className={classes.toolbar}>
                     <IconButton edge="start" aria-label="menu" style={{color: "white"}} onClick={handleToggleSideMenu}><MenuIcon/></IconButton>
-                    <Typography variant="h5">Thai Nguyen</Typography>
+                    <Typography variant="h3" className={classes.title}>Thai Nguyen</Typography>
                     <div></div>
                 </Toolbar>
                 
