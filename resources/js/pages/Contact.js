@@ -2,8 +2,6 @@ import React from "react";
 import {
 	Button,
 	Container,
-	Grid,
-	Link,
 	TextField,
 	Typography
 } from "@material-ui/core";
@@ -24,6 +22,15 @@ const useStyles = makeStyles((theme) => ({
 const Contact = () => {
 	const classes = useStyles();
 
+    const ContactSchema = Yup.object().shape({
+        contactName: Yup.string()
+        .min(2, "Contact name is too short")
+        .max(50, "Contact name is too long")
+        .required("Contact name is required"),
+        email: Yup.string()
+        .email("Invalid email")
+        .required("Email is required"),
+    })
 	return (
 		<div>
 			<Navbar />
@@ -39,10 +46,13 @@ const Contact = () => {
 							subject: "",
 							message: ""
 						}}
-						onSubmit={(values, action) => {}}
+						onSubmit={(values, action) => {
+                            console.log(values)
+                        }}
 						render={(formikProps) => (
 							<ContactForm {...formikProps} />
-						)}
+                        )}
+                        validationSchema={ContactSchema}
 					/>
 				</Container>
 			</Container>
@@ -76,7 +86,9 @@ const ContactForm = ({
 						onBlur={handleBlur}
 						label="Your Name (required)"
 						type="text"
-						variant="outlined"
+                        variant="outlined"
+                        helperText={touched.contactName ? errors.contactName:""}
+                        error={touched.contactName && Boolean(errors.contactName)}
 					/>
                     <TextField
                         name="email"
@@ -89,7 +101,9 @@ const ContactForm = ({
 						onBlur={handleBlur}
 						label="Your Email (required)"
 						type="text"
-						variant="outlined"
+                        variant="outlined"
+                        helperText={touched.email ? errors.email:""}
+                        error={touched.email && Boolean(errors.email)}
 					/>
                     <TextField
                         name="subject"
@@ -104,7 +118,7 @@ const ContactForm = ({
 						variant="outlined"
 					/>
                     <TextField
-                        name="subject"
+                        name="message"
                         margin="normal"
 						fullWidth
 						id="message"
