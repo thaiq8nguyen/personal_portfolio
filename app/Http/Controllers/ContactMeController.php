@@ -4,18 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
-//use App\Mail\ContactMeEmail;
+use App\Mail\ContactMeEmail;
 
 class ContactMeController extends Controller
 {
     public function contact()
     {
-        $data = ['message' => 'This is a test!']
-        // Mail::send(['text' => 'view'], $data, function($message){
-        //     $message->from('thai@thaiqnguyen.com','Personal');
-        //     $message->to('discoverylight@yahoo.com')
-        // })
-        return response()->json(['message' => 'got it']);
+        $data = ['message' => 'Hello, how are you?'];
+
+        Mail::to('lightbringeree@gmail.com')->send(new ContactMeEmail($data));
+
+        if(Mail::failures())
+        {
+            return response()->json(['message' => 'Sorry! Please try again later'],500);
+        }
+        else 
+        {
+            return response()->json(['message' => 'Your email has been sent!'], 200);
+        }
+        //return response()->json(['message' => 'got it']);
 
 
     }
