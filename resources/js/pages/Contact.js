@@ -27,15 +27,11 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-
-
 const Contact = () => {
 	const classes = useStyles();
 
 	const [messageSent, setMessageSent] = useState(false);
 	const [confirmation, setConfirmation] = useState("Test");
-
-	
 
 	const ContactSchema = Yup.object().shape({
 		contactName: Yup.string()
@@ -63,7 +59,6 @@ const Contact = () => {
 							message: ""
 						}}
 						onSubmit={(values, action) => {
-							
 							axios
 								.post("/api/contact", values)
 								.then((response) => {
@@ -72,20 +67,21 @@ const Contact = () => {
 									action.resetForm();
 								})
 								.catch((errors) => {
-									
 									if (errors.response) {
 										setMessageSent(true);
 										if (errors.response.status === 500) {
-											
-											setConfirmation(errors.data.message);
-											
-										} else if (errors.response.status === 422) {
-											setConfirmation("Your message has missing required information!")
+											setConfirmation(
+												errors.data.message
+											);
+										} else if (
+											errors.response.status === 422
+										) {
+											setConfirmation(
+												"Your message has missing required information!"
+											);
 										}
-										action.resetForm()
-										
+										action.resetForm();
 									}
-									
 								});
 						}}
 						render={(formikProps) => (
@@ -93,21 +89,19 @@ const Contact = () => {
 						)}
 						validationSchema={ContactSchema}
 					/>
-				{ messageSent && <Container className={classes.confirmationContainer}>
-					<Typography variant="body1">{confirmation}</Typography>
-				</Container>}
+					{messageSent && (
+						<Container className={classes.confirmationContainer}>
+							<Typography variant="body1">
+								{confirmation}
+							</Typography>
+						</Container>
+					)}
 				</Container>
-				
-				
-					
-				
 			</Container>
 		</div>
 	);
 };
-const formStyles = makeStyles((theme) => ({
-	
-}));
+const formStyles = makeStyles((theme) => ({}));
 const ContactForm = ({
 	values,
 	errors,
@@ -186,11 +180,8 @@ const ContactForm = ({
 					<Button type="submit" variant="contained" color="primary">
 						Send
 					</Button>
-					
-					
 				</form>
 			</Container>
-			
 		</div>
 	);
 };
