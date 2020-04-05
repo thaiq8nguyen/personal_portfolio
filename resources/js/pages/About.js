@@ -23,9 +23,9 @@ const About = () => {
                 <Container className={classes.titleContainer}>
                     <Typography variant="h4">About</Typography>
                 </Container>
-                <Typography variant="body1"><strong>Thai Nguyen</strong> is a web developer, engineer, traveler. Until recently, he used to work for a high volume mobile phone service business where he was responsible for data warehousing management and test engineering. He had developed several pieces of application to handle inventory, product management flow, and merchandise returns.
+                <Typography variant="body1"><strong>Thai Nguyen</strong> is a web developer, engineer, traveler. Until recently, he used to work for a high-volume mobile phone service business where he was responsible for data warehousing management and test engineering.While employed, he had developed several pieces of application to handle inventory, product management flow, and merchandise returns.
                 <br/><br/>
-                In the past ten months, Thai has been enrolled in an immersive full-stack web developer program at Lambda School. During the courses, he has learned basic HTML with Javascript front-end developement to back-end development using Node JS. Additionally, he also has learned intensive computer science materials such as algorithms, graphs, blockchains and basic CPU computing operations.
+                In the past ten months, Thai has been enrolled in an immersive full-stack web developer program at Lambda School. During the courses, he has learned web developments started from JavaScript front-end development to back-end development using Node JS. Additionally, he has also learned intensive computer science materials such as algorithms, graphs, blockchains and basic CPU computing operations.
 
                 <br/><br/>
                 In his spare time, Thai enjoys running and exploring various web technologies.
