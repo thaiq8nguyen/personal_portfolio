@@ -31,9 +31,10 @@ class ContactMeEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact')
-        ->from('thai@thaiqnguyen.com','Personal Portfolio')
-        ->subject('Testing')
-        ->with(['message' => 'Hello, how are you?']);
+        
+        return $this->view("emails.contact")
+        ->from($this->data["email"],$this->data['contactName'])
+        ->subject($this->data["subject"])
+        ->with(['contactMessage' => $this->data["message"]]);
     }
 }

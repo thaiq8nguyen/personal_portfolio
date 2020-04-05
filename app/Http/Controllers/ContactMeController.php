@@ -8,21 +8,22 @@ use App\Mail\ContactMeEmail;
 
 class ContactMeController extends Controller
 {
-    public function contact()
+    public function contact(Request $request)
     {
-        $data = ['message' => 'Hello, how are you?'];
+        $data = $request->all();
 
-        Mail::to('lightbringeree@gmail.com')->send(new ContactMeEmail($data));
+        
+        Mail::to('thai@thaiqnguyen.com')->send(new ContactMeEmail($data));
 
         if(Mail::failures())
         {
-            return response()->json(['message' => 'Sorry! Please try again later'],500);
+            return response()->json(['message' => 'Sorry! your message has not been sent.'],500);
         }
         else 
         {
-            return response()->json(['message' => 'Your email has been sent!'], 200);
+            return response()->json(['message' => 'Your message has been sent!'], 200);
         }
-        //return response()->json(['message' => 'got it']);
+        return response()->json(['message' => 'got it']);
 
 
     }
