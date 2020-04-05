@@ -72,9 +72,20 @@ const Contact = () => {
 									action.resetForm();
 								})
 								.catch((errors) => {
-									setMessageSent(true);
-									setConfirmation(errors.data.message);
-									action.resetForm()
+									
+									if (errors.response) {
+										setMessageSent(true);
+										if (errors.response.status === 500) {
+											
+											setConfirmation(errors.data.message);
+											
+										} else if (errors.response.status === 422) {
+											setConfirmation("Your message has missing required information!")
+										}
+										action.resetForm()
+										
+									}
+									
 								});
 						}}
 						render={(formikProps) => (

@@ -10,6 +10,14 @@ class ContactMeController extends Controller
 {
     public function contact(Request $request)
     {
+        $validation = $request->validate([
+            'contactName' => 'required|min:2|max:50',
+            'email' => 'required|email:rfc,dns',
+
+        ]);
+
+        
+
         $data = $request->all();
 
         
